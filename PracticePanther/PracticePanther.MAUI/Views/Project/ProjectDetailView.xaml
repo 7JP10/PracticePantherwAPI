@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:PracticePanther.MAUI.ViewModels" x:DataType="viewmodels:ProjectViewModel"
+             x:Class="PracticePanther.MAUI.Views.ProjectDetailView"
+             Title="ProjectDetailView"
+             NavigatedTo="OnArriving"
+             NavigatedFrom="OnLeaving">
+
+    <Grid>
+            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+
+                <VerticalStackLayout>
+
+                    <!--ID-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="ID" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.Id, Mode=TwoWay}"/>
+                    <!--END OF ID-->
+
+                    <!--ID-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Client ID" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.ClientId, Mode=TwoWay}"/>
+                    <!--END OF ID-->
+
+
+
+                    <!--NAME-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Full Name" />
+
+                    <Entry Placeholder = "Enter Name of Project"
+                           ClearButtonVisibility="WhileEditing"
+                           Text="{Binding Path=Name, Mode=TwoWay}"/>
+                    <!--END OF NAME-->
+
+                    <!--ABBREVIATION-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Abbreviation" />
+
+                    <Entry Placeholder = "Enter Abbreviation of Project"
+                           ClearButtonVisibility="WhileEditing"
+                           Text="{Binding Path=Abbreviation, Mode=TwoWay}"/>
+                    <!--END OF ABBREVIATION-->
+
+
+                    <!--ACTIVE -->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Is Active?" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.IsActive, Mode=TwoWay}"/>
+                    <!--END OF ACTIVE -->
+
+
+                    <!--OPEN DATE-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Open Date" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=OpenDate, Mode=TwoWay}"/>
+                    <!--END OF OPEN DATE -->
+
+                    <!--CLOSED DATE-->
+                    <VerticalStackLayout IsVisible="{Binding IsActiveStatusVisible}">
+
+                        <Label Padding="10" HorizontalOptions="Center"
+                               Text="Closed Date" />
+
+                        <Entry IsReadOnly="true"
+                               Text="{Binding Path=ClosedDate, Mode=TwoWay}"/>
+
+                    </VerticalStackLayout>
+                    
+                    <!--END OF CLOSED DATE -->
+
+                    <Button Text="OK" Clicked="OkClicked"/>
+
+                    <Button Text="Go Back" Clicked="CancelClicked"/>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+        <Grid Grid.Column="2">
+
+
+
+        </Grid>
+            
+        
+    </Grid>
+
+
+</ContentPage>

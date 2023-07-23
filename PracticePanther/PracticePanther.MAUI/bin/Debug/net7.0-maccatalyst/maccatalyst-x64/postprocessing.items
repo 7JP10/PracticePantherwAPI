@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <_PostProcessingItem Include="PracticePanther.MAUI.app/Contents/MacOS/PracticePanther.MAUI">
+      <BCSymbolMapName>PracticePanther.MAUI.bcsymbolmap</BCSymbolMapName>
+      <NoDSymUtil>true</NoDSymUtil>
+      <dSYMSourcePathExists>false</dSYMSourcePathExists>
+      <NoSymbolStrip>true</NoSymbolStrip>
+      <dSYMInfoPlistRelativePath>PracticePanther.MAUI.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
+      <SymbolFile>/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/obj/Debug/net7.0-maccatalyst/maccatalyst-x64/mtouch-symbols.list</SymbolFile>
+      <DSymName>PracticePanther.MAUI.app.dSYM</DSymName>
+      <SourceProjectPath>/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI</SourceProjectPath>
+    </_PostProcessingItem>
+  </ItemGroup>
+</Project>

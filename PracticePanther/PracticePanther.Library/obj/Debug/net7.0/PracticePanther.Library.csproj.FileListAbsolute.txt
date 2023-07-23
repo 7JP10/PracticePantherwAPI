@@ -1,0 +1,12 @@
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/bin/Debug/net7.0/PracticePanther.Library.deps.json
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/bin/Debug/net7.0/PracticePanther.Library.dll
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/bin/Debug/net7.0/PracticePanther.Library.pdb
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/PracticePanther.Library.csproj.AssemblyReference.cache
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/PracticePanther.Library.GeneratedMSBuildEditorConfig.editorconfig
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/PracticePanther.Library.AssemblyInfoInputs.cache
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/PracticePanther.Library.AssemblyInfo.cs
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/PracticePanther.Library.csproj.CoreCompileInputs.cache
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/PracticePanther.Library.dll
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/refint/PracticePanther.Library.dll
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/PracticePanther.Library.pdb
+/Users/joseibarra/Projects/PracticePanther/PracticePanther.Library/obj/Debug/net7.0/ref/PracticePanther.Library.dll

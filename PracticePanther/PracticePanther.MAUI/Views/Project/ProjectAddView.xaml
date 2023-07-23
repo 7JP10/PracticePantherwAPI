@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticePanther.MAUI.Views.ProjectAddView"
+             Title="ProjectAddView"
+             NavigatedTo="OnArriving"
+             NavigatedFrom="OnLeaving">
+
+    <VerticalStackLayout>
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+
+                <VerticalStackLayout>
+
+                    <Label Padding="10"
+                            Text="Name"
+                            HorizontalOptions="Center"/>
+
+                    <Entry ClearButtonVisibility="WhileEditing"
+                           Placeholder = "Enter Name of Project"
+                           Grid.Column="1"
+                           Text="{Binding Path=Model.LongName, Mode=TwoWay}"/>
+
+                    <Label Padding="10"
+                            Text="Abbreviation"
+                            HorizontalOptions="Center"/>
+
+                    <Entry ClearButtonVisibility="WhileEditing"
+                           Placeholder = "Enter Abbreviation of Project"
+                           Grid.Column="1"
+                           Text="{Binding Path=Model.ShortName, Mode=TwoWay}"/>
+
+                    <!--BUTTONS-->
+
+                    <Button Text="Add" Clicked="AddClicked"/>
+
+                    <Button Text="Cancel" Clicked="CancelClicked"/>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>

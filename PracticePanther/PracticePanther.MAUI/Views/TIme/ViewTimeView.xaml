@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticePanther.MAUI.Views.ViewTimeView"
+             Title="ViewTimeView"
+             NavigatedTo="OnArriving"
+             NavigatedFrom="OnLeaving">
+
+    <Grid>
+            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+
+                <VerticalStackLayout>
+
+                    <!--ENTRY NUM-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Time Entry Number" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.EntryNumber, Mode=TwoWay}"/>
+                    <!--END OF ENTRY NUM-->
+
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="--------------------------" />
+
+                    <!--EMPLOYEE ID-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Employee ID" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.EmployeeId, Mode=TwoWay}"/>
+                    <!--END OF EMPLOYEE ID-->
+
+                    <!--RATE-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Employee Rate" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.Rate, Mode=TwoWay}"/>
+                    <!--END OF RATE-->
+
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="--------------------------" />
+
+                    <!--PROJECT ID-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Project ID" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.ProjectId, Mode=TwoWay}"/>
+                    <!--END OF PROJECT ID-->
+                    
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="--------------------------" />
+
+                    <!--DUE DATE-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Pay By:" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=DateAndTime, Mode=TwoWay}"/>
+                    <!--END OF DUE DATE -->
+
+                    <!--HOURS-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Hours" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.Hours, Mode=TwoWay}"/>
+                    <!--END OF HOURS-->
+
+
+                    <!--NARRATIVE -->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Summary:" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.Narrative, Mode=TwoWay}"/>
+                    <!--END OF NARRATIVE -->
+
+
+                    <Button Text="Go Back" Clicked="CancelClicked"/>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+        <Grid Grid.Column="2">
+
+            <VerticalStackLayout>
+
+                    <!--BILL NUM-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Bill  Number" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.EntryNumber, Mode=TwoWay}"/>
+                    <!--END OF BILL NUM-->
+
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="--------------------------" />
+
+                    <!--TOTAL AMOUNT-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Total Amount Due" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Total, Mode=TwoWay}"/>
+                    <!--END OF TOTAL AMOUNT-->
+                    
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="--------------------------" />
+
+                    <!--DUE DATE-->
+                    <Label Padding="10" HorizontalOptions="Center"
+                           Text="Pay By:" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=DateAndTime, Mode=TwoWay}"/>
+                    <!--END OF DUE DATE -->
+
+                </VerticalStackLayout>
+
+        </Grid>
+            
+        
+    </Grid>
+
+</ContentPage>

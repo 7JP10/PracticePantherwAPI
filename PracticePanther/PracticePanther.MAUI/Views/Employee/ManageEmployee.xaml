@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticePanther.MAUI.Views.ManageEmployee"
+             Title="ManageEmployee"
+             NavigatedTo="OnArrived">
+
+    <VerticalStackLayout>
+        <Label Padding="10" Text="Employees"
+               HorizontalOptions="Center"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+                <VerticalStackLayout>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="10*"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Entry Grid.Column="0"
+                               Placeholder = "Search Employee"
+                               ClearButtonVisibility="WhileEditing"
+                               Text="{Binding Path=QueryEmployee}"></Entry>
+                        <Button Grid.Column="1" Text="Search" Clicked="SearchEmployeeClick"></Button>
+                        <Button Grid.Column="2" Text="Add" Clicked="EmployeeAddClicked"></Button>
+                    </Grid>
+
+                    <Label Padding="10"
+                           Text="" HorizontalOptions="Center"/>
+
+                    <ListView 
+                        ItemsSource="{Binding Path=Employees}"
+                        SelectedItem="{Binding Path=SelectedEmployee}"
+                        >
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="12*"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <Label Grid.Column="0"  Text="{Binding Path=Display}"/>
+                                        
+                                        <Button Grid.Column="1" 
+                                                Text="View"
+                                                Command="{Binding Path = ViewEmployeeCommand}"
+                                                CommandParameter="{Binding}"
+                                                Clicked="ViewEmployeeClicked"
+                                                />
+
+                                        <Button Grid.Column="2" 
+                                                Text="Edit"
+                                                Command="{Binding Path = EditEmployeeCommand}"
+                                                CommandParameter="{Binding}"
+                                                Clicked="EditEmployeeClicked"
+                                                />
+                                        <Button Grid.Column="3" 
+                                                Text="Delete"
+                                                BackgroundColor="Red"
+                                                Command="{Binding Path=DeleteEmployeeCommand}" 
+                                                CommandParameter="{Binding}"
+                                                Clicked="DeleteEmployeeClicked"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <Button Text="Go Back" Clicked="GoBackClicked"/>
+
+                </VerticalStackLayout>
+                
+            </Grid>
+
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>

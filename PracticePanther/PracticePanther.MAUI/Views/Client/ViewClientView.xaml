@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticePanther.MAUI.Views.ViewClientView"
+             Title="ViewClientView"
+             NavigatedTo="OnArriving"
+             NavigatedFrom="OnLeaving">
+
+    <Grid>
+            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+
+                <VerticalStackLayout>
+
+                    <!--ID-->
+                    <Label Padding="10"
+                           Text="ID" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.Id, Mode=TwoWay}"/>
+                    <!--END OF ID-->
+
+                    <!--NAME-->
+                    <Label Padding="10"
+                           Text="Name" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.Name, Mode=TwoWay}"/>
+                    <!--END OF NAME-->
+
+                 
+
+                    <!--ACTIVE -->
+                    <Label Padding="10"
+                           Text="Is Active?" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.IsActive, Mode=TwoWay}"/>
+                    <!--END OF ACTIVE -->
+
+
+                    <!--OPEN DATE-->
+                    <Label Padding="10"
+                           Text="Open Date" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=OpenDate, Mode=TwoWay}"/>
+                    <!--END OF OPEN DATE -->
+
+                    <!--CLOSED DATE-->
+                    <VerticalStackLayout IsVisible="{Binding IsActiveStatusVisible}">
+
+                        <Label Padding="10"
+                               Text="Closed Date" />
+
+                        <Entry IsReadOnly="true"
+                               Text="{Binding Path=ClosedDate, Mode=TwoWay}"/>
+
+                    </VerticalStackLayout>
+                    
+                    <!--END OF CLOSED DATE -->
+
+                    <!--NOTES-->
+                    <Label Padding="10"
+                           Text="Notes" />
+
+                    <Entry IsReadOnly="true"
+                           Text="{Binding Path=Model.Notes, Mode=TwoWay}"/>
+                    <!--END OF NOTES -->
+
+                    <Button Text="Go Back" Clicked="CancelClicked"/>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+        <Grid Grid.Column="2">
+            <VerticalStackLayout>
+             <Label Padding="10"
+                    Text="Project(s)"
+                    HorizontalOptions="Center"/>
+             <ListView 
+                ItemsSource="{Binding Path=Projects}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="12*"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0"  Text="{Binding Path=Display}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+             </ListView>
+            </VerticalStackLayout>
+        </Grid>
+
+        <Grid Grid.Column="3">
+            <VerticalStackLayout>
+             <Label Padding="10"
+                    Text="Bill(s)"
+                    HorizontalOptions="Center"/>
+             <ListView 
+                ItemsSource="{Binding Path=Bills}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="12*"/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Label Grid.Column="0"  Text="{Binding Path=Display}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+             </ListView>
+            </VerticalStackLayout>
+        </Grid>
+        
+
+    </Grid>
+
+</ContentPage>

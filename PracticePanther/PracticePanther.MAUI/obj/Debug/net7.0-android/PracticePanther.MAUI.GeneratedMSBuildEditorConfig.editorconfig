@@ -1,0 +1,159 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = PracticePanther.MAUI
+build_property.ProjectDir = /Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Client/AddClientView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Client.AddClientView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Client/AddClientView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Client/AddClientView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Client/ClientDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Client.ClientDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Client/ClientDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Client/ClientDetailView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Client/ClientView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Client.ClientView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Client/ClientView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Client/ClientView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Client/ViewClientView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Client.ViewClientView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Client/ViewClientView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Client/ViewClientView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Employee/AddEmployeeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Employee.AddEmployeeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Employee/AddEmployeeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Employee/AddEmployeeView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Employee/EmployeeDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Employee.EmployeeDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Employee/EmployeeDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Employee/EmployeeDetailView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Employee/ManageEmployee.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Employee.ManageEmployee.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Employee/ManageEmployee.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Employee/ManageEmployee.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Employee/ViewEmployeeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Employee.ViewEmployeeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Employee/ViewEmployeeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Employee/ViewEmployeeView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Project/ManageProjectsView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Project.ManageProjectsView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Project/ManageProjectsView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Project/ManageProjectsView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Project/ProjectAddView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Project.ProjectAddView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Project/ProjectAddView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Project/ProjectAddView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Project/ProjectDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Project.ProjectDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Project/ProjectDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Project/ProjectDetailView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Project/ViewProjectView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Project.ViewProjectView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Project/ViewProjectView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Project/ViewProjectView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/TIme/ManageTime.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.TIme.ManageTime.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TIme/ManageTime.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TIme/ManageTime.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/TIme/TimeAddView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.TIme.TimeAddView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TIme/TimeAddView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TIme/TimeAddView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/TIme/TimeDetailView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.TIme.TimeDetailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TIme/TimeDetailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TIme/TimeDetailView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/TIme/ViewTimeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.TIme.ViewTimeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/TIme/ViewTimeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/TIme/ViewTimeView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Time2/ManageTimeView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Time2.ManageTimeView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Time2/ManageTimeView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Time2/ManageTimeView.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Time2/TimeDetail.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Time2.TimeDetail.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Time2/TimeDetail.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Time2/TimeDetail.xaml
+
+[/Users/joseibarra/Projects/PracticePanther/PracticePanther.MAUI/Views/Time2/TimeInfo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = PracticePanther.MAUI.Views.Time2.TimeInfo.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Time2/TimeInfo.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Time2/TimeInfo.xaml

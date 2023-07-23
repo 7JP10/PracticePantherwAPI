@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PracticePanther.MAUI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PracticePanther.MAUI"
+    xmlns:local2="clr-namespace:PracticePanther.MAUI.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Client"
+        ContentTemplate="{DataTemplate local2:ClientView}"
+        Route="Client" />
+
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+
+    <ShellContent
+        Title="ClientView"
+        ContentTemplate="{DataTemplate local2:ViewClientView}"
+        Route="ClientView" />
+
+    <ShellContent
+        Title="ClientDetail"
+        ContentTemplate="{DataTemplate local2:ClientDetailView}"
+        Route="ClientDetail" />
+
+    <ShellContent
+        Title="ClientAdd"
+        ContentTemplate="{DataTemplate local2:AddClientView}"
+        Route="ClientAdd" />
+
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+
+    <ShellContent
+        Title="ManageProject"
+        ContentTemplate="{DataTemplate local2:ManageProjectsView}"
+        Route="ManageProject" />
+
+    <ShellContent
+        Title="AddProject"
+        ContentTemplate="{DataTemplate local2:ProjectAddView}"
+        Route="AddProject" />
+
+    <ShellContent
+        Title="ProjectView"
+        ContentTemplate="{DataTemplate local2:ViewProjectView}"
+        Route="ProjectView" />
+
+    <ShellContent
+        Title="ProjectDetail"
+        ContentTemplate="{DataTemplate local2:ProjectDetailView}"
+        Route="ProjectDetail" />
+
+    
+
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+
+    <ShellContent
+        Title="ManageEmployee"
+        ContentTemplate="{DataTemplate local2:ManageEmployee}"
+        Route="ManageEmployee" />
+
+    <ShellContent
+        Title="AddEmployee"
+        ContentTemplate="{DataTemplate local2:AddEmployeeView}"
+        Route="AddEmployee" />
+
+    <ShellContent
+        Title="EmployeeView"
+        ContentTemplate="{DataTemplate local2:ViewEmployeeView}"
+        Route="EmployeeView" />
+
+    <ShellContent
+        Title="EmployeeDetail"
+        ContentTemplate="{DataTemplate local2:EmployeeDetailView}"
+        Route="EmployeeDetail" />
+
+
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+
+    <ShellContent
+        Title="ManageTime"
+        ContentTemplate="{DataTemplate local2:ManageTime}"
+        Route="ManageTime" />
+
+    <ShellContent
+        Title="AddTime"
+        ContentTemplate="{DataTemplate local2:TimeAddView}"
+        Route="AddTime" />
+
+    <ShellContent
+        Title="TimeView"
+        ContentTemplate="{DataTemplate local2:ViewTimeView}"
+        Route="TimeView" />
+
+    <ShellContent
+        Title="TimeEdit"
+        ContentTemplate="{DataTemplate local2:TimeDetailView}"
+        Route="TimeEdit" />
+
+
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+    <!--*********************************************************-->
+
+    <ShellContent
+        Title="TimeManage"
+        ContentTemplate="{DataTemplate local2:ManageTimeView}"
+        Route="TimeManage" />
+
+    <ShellContent
+        Title="TimeDetail"
+        ContentTemplate="{DataTemplate local2:TimeDetail}"
+        Route="TimeDetail" />
+
+    <ShellContent
+        Title="TimeInfo"
+        ContentTemplate="{DataTemplate local2:TimeInfo}"
+        Route="TimeInfo" />
+
+</Shell>

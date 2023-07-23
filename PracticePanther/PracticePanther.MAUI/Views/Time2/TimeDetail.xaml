@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticePanther.MAUI.Views.TimeDetail"
+             Title="TimeDetail"
+             NavigatedTo="OnArriving"
+             NavigatedFrom="OnLeaving">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/> <!--0-->
+                <RowDefinition Height="1*"/> 
+                <RowDefinition Height="1*"/> <!--2-->
+                <RowDefinition Height="1*"/> 
+                <RowDefinition Height="2*"/> <!--4-->
+                <RowDefinition Height="1*"/> 
+                <RowDefinition Height="2*"/> <!--6-->
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/> <!--8-->
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <!--****************PROJECT AND EMPLOYEE LIST****************-->
+
+
+
+            <!--***********END OF PROJECT AND EMPLOYEE LIST*************-->
+
+            <!--****************HOURS AND DATE****************-->
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/> <!--0-->
+                    <ColumnDefinition Width="2*"/> 
+                    <ColumnDefinition Width="4*"/> <!--2-->
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/> <!--4-->
+                    <ColumnDefinition Width="4*"/> 
+                    <ColumnDefinition Width="2*"/> <!--6-->
+                </Grid.ColumnDefinitions>
+
+                <Label
+                        Grid.Column="1"
+                        Text="Hours"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        FontSize="15"
+                        FontAttributes="Bold"/>
+
+                <Entry Grid.Column="2" Text="{Binding Path=Hours}"></Entry>
+
+                <Label
+                        Grid.Column="4"
+                        Text="Bill Should Be Paid By?"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        FontSize="15"
+                        FontAttributes="Bold"/>
+
+                <Entry Grid.Column="5" Text="{Binding Path=DateAndTime}"></Entry>
+
+            </Grid>
+
+            <!--****************END OF HOURS AND DATE****************-->
+
+            <!--****************NARRATIVE****************-->
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions> 
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/> <!--0-->
+                    <RowDefinition Height="5*"/> 
+                </Grid.RowDefinitions>
+
+                <Label
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="Summary of Work Done"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        FontSize="15"
+                        FontAttributes="Bold"/>
+
+                <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Path=Narrative}"></Entry>
+
+            </Grid>
+
+            <!--****************END OF NARRATIVE****************-->
+
+            <Grid Grid.Row="6">
+                <Grid.ColumnDefinitions> 
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1" Text="Ok" Clicked="OkClick" />
+
+            </Grid>
+
+            <Grid Grid.Row="8">
+                <Grid.ColumnDefinitions> 
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1" Text="Cancel" Clicked="CancelTimeAddClick"/>
+
+            </Grid>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

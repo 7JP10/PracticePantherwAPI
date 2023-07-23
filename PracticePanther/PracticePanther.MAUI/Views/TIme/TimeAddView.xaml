@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticePanther.MAUI.Views.TimeAddView"
+             Title="TimeAddView"
+             NavigatedTo="OnArrived"
+             NavigatedFrom="OnLeaving">
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/> <!--0-->
+                <RowDefinition Height="1*"/> 
+                <RowDefinition Height="1*"/> <!--2-->
+                <RowDefinition Height="1*"/> 
+                <RowDefinition Height="2*"/> <!--4-->
+                <RowDefinition Height="1*"/> 
+                <RowDefinition Height="2*"/> <!--6-->
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="2*"/> <!--8-->
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+
+            <!--****************PROJECT AND EMPLOYEE LIST****************-->
+
+            <Grid Grid.Row="0"> 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/> <!--0-->
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="2*"/> <!--2-->
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="2*"/> <!--4-->
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="1"><!--PROJECT LIST-->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/> <!--0-->
+                        <RowDefinition Height="1*"/> 
+                        <RowDefinition Height="5*"/> <!--2--> 
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="6*"/> <!--0-->
+                            <ColumnDefinition Width="2*"/> 
+                        </Grid.ColumnDefinitions>
+
+                        <Entry Grid.Column="0" Text="{Binding Path=QueryProject}"></Entry>
+                        <Button Grid.Column="1" Text="Search" Clicked="SearchProjectClick"></Button>
+                    </Grid>
+
+                    <Label
+                        Grid.Row="1"
+                        Text="Select a Project"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        FontSize="15"
+                        FontAttributes="Bold"/>
+
+                    <ListView Grid.Row="2"
+                        ItemsSource="{Binding Path = Projects, Mode = TwoWay}"
+                        SelectedItem="{Binding Path = SelectedProject, Mode = TwoWay}"
+                        ></ListView> 
+
+                </Grid><!--END OF PROJECT LIST-->
+
+                <Grid Grid.Column="3"><!--EMPLOYEE LIST-->
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/> <!--0-->
+                        <RowDefinition Height="1*"/> 
+                        <RowDefinition Height="5*"/> <!--2--> 
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="6*"/> <!--0-->
+                            <ColumnDefinition Width="2*"/> 
+                        </Grid.ColumnDefinitions>
+
+                        <Entry Grid.Column="0" Text="{Binding Path=QueryEmployee}"></Entry>
+                        <Button Grid.Column="1" Text="Search" Clicked="SearchEmployeeClick"></Button>
+                    </Grid>
+
+                    <Label
+                        Grid.Row="1"
+                        Text="Select a Employee"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        FontSize="15"
+                        FontAttributes="Bold"/>
+
+                    <ListView Grid.Row="2"
+                        ItemsSource="{Binding Path = Employees, Mode = TwoWay}"
+                        SelectedItem="{Binding Path = SelectedEmployee, Mode = TwoWay}"
+                        ></ListView> 
+
+                </Grid><!--END OF EMPLOYEE LIST-->
+
+            </Grid> 
+
+
+            <!--***********END OF PROJECT AND EMPLOYEE LIST*************-->
+
+            <!--****************HOURS AND DATE****************-->
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/> <!--0-->
+                    <ColumnDefinition Width="2*"/> 
+                    <ColumnDefinition Width="4*"/> <!--2-->
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/> <!--4-->
+                    <ColumnDefinition Width="4*"/> 
+                    <ColumnDefinition Width="2*"/> <!--6-->
+                </Grid.ColumnDefinitions>
+
+                <Label
+                        Grid.Column="1"
+                        Text="Hours"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        FontSize="15"
+                        FontAttributes="Bold"/>
+
+                <Entry Grid.Column="2" Text="{Binding Path=Model.Hours}"></Entry>
+
+                <Label
+                        Grid.Column="4"
+                        Text="Bill Should Be Paid By?"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        FontSize="15"
+                        FontAttributes="Bold"/>
+
+                <Entry Grid.Column="5" Text="{Binding Path=DateAndTime}"></Entry>
+
+            </Grid>
+
+            <!--****************END OF HOURS AND DATE****************-->
+
+            <!--****************NARRATIVE****************-->
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions> 
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/> <!--0-->
+                    <RowDefinition Height="5*"/> 
+                </Grid.RowDefinitions>
+
+                <Label
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Text="Summary of Work Done"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        FontSize="15"
+                        FontAttributes="Bold"/>
+
+                <Entry Grid.Row="1" Grid.Column="1" Text="{Binding Path=Model.Narrative}"></Entry>
+
+            </Grid>
+
+            <!--****************END OF NARRATIVE****************-->
+
+            <Grid Grid.Row="6">
+                <Grid.ColumnDefinitions> 
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1" Text="Ok" Clicked="OkClick" />
+
+            </Grid>
+
+            <Grid Grid.Row="8">
+                <Grid.ColumnDefinitions> 
+                        <ColumnDefinition Width="3*"/>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1" Text="Cancel" Clicked="CancelTimeAddClick"/>
+
+            </Grid>
+
+        </Grid>
+
+    </ScrollView>
+
+</ContentPage>

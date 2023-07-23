@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PracticePanther.MAUI.Views.AddEmployeeView"
+             Title="AddEmployeeView"
+             NavigatedTo="OnArriving"
+             NavigatedFrom="OnLeaving">
+
+    <VerticalStackLayout>
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1">
+
+                <VerticalStackLayout>
+
+                    <Label Padding="10"
+                            Text="Name"
+                            HorizontalOptions="Center"/>
+
+                    <Entry ClearButtonVisibility="WhileEditing"
+                           Placeholder = "Enter Name of Employee"
+                           Grid.Column="1"
+                           Text="{Binding Path=Model.Name, Mode=TwoWay}"/>
+
+                    <Label Padding="10"
+                            Text="Rate"
+                            HorizontalOptions="Center"/>
+
+                    <Entry ClearButtonVisibility="WhileEditing"
+                           Placeholder = "Enter Rate"
+                           Grid.Column="1"
+                           Text="{Binding Path=Model.Rate, Mode=TwoWay}"/>
+
+                    <!--BUTTONS-->
+
+                    <Button Text="Add" Clicked="AddEmployeeClicked"/>
+
+                    <Button Text="Cancel" Clicked="CancelClicked"/>
+
+                </VerticalStackLayout>
+
+            </Grid>
+
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>
