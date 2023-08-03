@@ -1,0 +1,61 @@
+using System;
+using PracticePanther.API.Database;
+using PracticePanther.Library.Models;
+
+namespace PracticePanther.API.EC
+{
+	public class ClientEC
+	{
+		/*public ClientEC()
+		{
+		}*/
+
+		public Client AddOrUpdate(Client client)
+		{
+            if (client.Id > 0) //UPDATE
+            {
+                var clientToUpdate = FakeDatabase.Clients.FirstOrDefault(c => c.Id == client.Id);
+                if (clientToUpdate != null)
+                {
+                    //FakeDatabase.Clients.Remove(clientToUpdate);
+                    var index = clientToUpdate.Id;
+                    FakeDatabase.Clients[index - 1] = client;
+                }
+                //FakeDatabase.Clients.Add(client);
+            }
+            else // ADD NEW CLIENT
+            {
+                //add
+                client.Id = FakeDatabase.LastClientId + 1;
+                FakeDatabase.Clients.Add(client);
+            }
+
+            return client;
+        }
+
+        public Client? Delete(int id)
+        {
+            var clientToDelete = FakeDatabase.Clients.FirstOrDefault(c => c.Id == id);
+
+            if (clientToDelete != null)
+            {
+                FakeDatabase.Clients.Remove(clientToDelete);
+            }
+
+            return clientToDelete;
+        }
+
+        public Client? GetId (int id)
+        {
+            return FakeDatabase.Clients.FirstOrDefault(c => c.Id == id) ?? new Client();
+        }
+
+        public IEnumerable<Client> Get()
+        {
+            return FakeDatabase.Clients;
+        }
+    }
+}
+
+//_root = @"C:\temp";
+            //_clientRoot = $"{_root}\\Clients";
